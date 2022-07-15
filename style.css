@@ -31,6 +31,21 @@
   width: 100%;
 }
 
+.user-card__info {
+  position: relative;
+  padding-top: 4.5rem;
+}
+
+.user-card__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  outline: 0.4rem solid white;
+}
+
 .user-card__stats {
   display: flex;
   justify-content: space-between;
