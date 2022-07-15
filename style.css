@@ -12,6 +12,27 @@
   box-sizing: inherit;
 }
 
+/* Typography */
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-08 {
+  font-size: 0.8rem;
+}
+
+.clr-accent {
+  color: var(--clr-accent);
+}
+
+.clr-light {
+  color: var(--clr-light);
+}
+
 .user-card {
   max-width: 23.4375rem;
   font-family: "Kumbh Sans", sans-serif;
