@@ -42,6 +42,28 @@ body {
   background-color: var(--bg-body);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-pattern-top,
+.bg-pattern-bottom {
+  display: block;
+  position: absolute;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.bg-pattern-top {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bg-pattern-bottom {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
 }
 
 main {
