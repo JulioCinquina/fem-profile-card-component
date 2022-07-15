@@ -48,10 +48,6 @@
   overflow: hidden;
 }
 
-.user-card * {
-  margin: 0;
-}
-
 .user-card__pattern img {
   display: block;
   width: 100%;
@@ -60,6 +56,11 @@
 .user-card__info {
   position: relative;
   padding-top: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+.user-card__info p {
+  margin: 0.4em;
 }
 
 .user-card__img {
@@ -77,6 +78,10 @@
   justify-content: space-between;
 
   border-top: 1px solid var(--clr-lightest);
+}
+
+.user-card__stats p {
+  margin: 0.2em;
 }
 
 .attribution {
