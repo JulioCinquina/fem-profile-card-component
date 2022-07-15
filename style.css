@@ -26,6 +26,11 @@
   margin: 0;
 }
 
+.user-card__pattern img {
+  display: block;
+  width: 100%;
+}
+
 .user-card__stats {
   display: flex;
   justify-content: space-between;
