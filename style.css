@@ -1,4 +1,17 @@
-/* font-family: "Kumbh Sans", sans-serif; */
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.user-card {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+}
 
 .attribution {
   font-size: 11px;
