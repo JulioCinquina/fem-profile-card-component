@@ -35,17 +35,16 @@
 
 .user-card {
   max-width: 23.4375rem;
+
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125rem;
   text-align: center;
 
-  display: flex;
-  flex-direction: column;
-}
-
-.user-card {
   border-radius: 1rem;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .user-card * {
