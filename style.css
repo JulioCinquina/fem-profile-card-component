@@ -1,5 +1,9 @@
 :root {
   box-sizing: border-box;
+  --bg-body: hsl(185, 75%, 39%);
+  --clr-accent: hsl(229, 23%, 23%);
+  --clr-light: hsl(227, 10%, 46%);
+  --clr-lightest: hsl(0, 0%, 59%);
 }
 
 *,
