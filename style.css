@@ -33,7 +33,23 @@
   color: var(--clr-light);
 }
 
+/*  */
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .user-card {
+  margin-block: auto;
   max-width: 23.4375rem;
 
   font-family: "Kumbh Sans", sans-serif;
