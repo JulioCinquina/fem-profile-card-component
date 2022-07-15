@@ -13,8 +13,24 @@
 }
 
 .user-card {
+  max-width: 23.4375rem;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card * {
+  margin: 0;
+}
+
+.user-card__stats {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--clr-lightest);
 }
 
 .attribution {
