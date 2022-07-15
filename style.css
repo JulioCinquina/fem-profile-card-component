@@ -48,6 +48,10 @@
   overflow: hidden;
 }
 
+.user-card * {
+  margin: 0;
+}
+
 .user-card__pattern img {
   display: block;
   width: 100%;
@@ -56,11 +60,14 @@
 .user-card__info {
   position: relative;
   padding-top: 4.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
-.user-card__info p {
-  margin: 0.4em;
+.user-card__name-age {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .user-card__img {
