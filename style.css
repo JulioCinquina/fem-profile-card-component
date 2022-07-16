@@ -5,6 +5,7 @@
   --clr-accent: hsl(229, 23%, 23%);
   --clr-light: hsl(227, 10%, 46%);
   --clr-lightest: hsl(0, 0%, 59%);
+  --clr-darkest: hsl(0, 0%, 0%);
 }
 
 *,
@@ -136,10 +137,13 @@ main {
 }
 
 .attribution {
-  font-size: 11px;
+  padding-block-start: 1rem;
+  padding-block-end: 0.25rem;
+  font-size: 0.75rem;
   text-align: center;
+  color: var(--clr-darkest);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-darkest);
 }
