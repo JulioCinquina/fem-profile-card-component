@@ -111,7 +111,7 @@ main {
 .user-card__name-age {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.6rem;
   margin-bottom: 0.5rem;
 }
 
