@@ -40,6 +40,10 @@ body {
   height: 100vh;
   margin: 0;
   background-color: var(--bg-body);
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -76,8 +80,6 @@ main {
   margin-block: auto;
   max-width: 23.4375rem;
 
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.125rem;
   text-align: center;
 
   border-radius: 1rem;
