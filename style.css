@@ -103,8 +103,9 @@ main {
 
 .user-card__info {
   position: relative;
-  padding-top: 4.5rem;
-  padding-bottom: 2rem;
+  padding-block-start: 4.5rem;
+  padding-block-end: 2rem;
+  padding-inline: 3rem;
 }
 
 .user-card__name-age {
