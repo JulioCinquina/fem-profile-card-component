@@ -1,0 +1,156 @@
+:root {
+  box-sizing: border-box;
+  --bg-body: hsl(185, 75%, 39%);
+  --bg-card: hsl(0, 0%, 100%);
+  --clr-accent: hsl(229, 23%, 23%);
+  --clr-light: hsl(227, 10%, 46%);
+  --clr-lightest: hsl(0, 0%, 59%);
+  --clr-darkest: hsl(0, 0%, 0%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-08 {
+  font-size: 0.8rem;
+}
+
+.clr-accent {
+  color: var(--clr-accent);
+}
+
+.clr-light {
+  color: var(--clr-light);
+}
+
+/*  */
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--bg-body);
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bg-pattern-top,
+.bg-pattern-bottom {
+  display: block;
+  position: absolute;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.bg-pattern-top {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bg-pattern-bottom {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card {
+  margin-block: auto;
+  max-width: min(90%, 23.4375rem);
+
+  text-align: center;
+
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.25);
+  background-color: var(--bg-card);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card * {
+  margin: 0;
+}
+
+.user-card__pattern img {
+  display: block;
+  width: 100%;
+}
+
+.user-card__info {
+  position: relative;
+  padding-block-start: 4.5rem;
+  padding-block-end: 2rem;
+  padding-inline: 3rem;
+}
+
+.user-card__name-age {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-card__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.35rem white;
+}
+
+.user-card__stats {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid hsl(0, 0%, 90%);
+  padding-block: 1.25rem;
+  padding-inline: 3rem;
+}
+
+.user-card__stats p {
+  margin: 0.2em;
+}
+
+.attribution {
+  padding-block-start: 1rem;
+  padding-block-end: 0.25rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--clr-darkest);
+}
+
+.attribution a {
+  color: var(--clr-darkest);
+}
