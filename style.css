@@ -83,7 +83,7 @@ main {
 
 .user-card {
   margin-block: auto;
-  max-width: 23.4375rem;
+  max-width: min(90%, 23.4375rem);
 
   text-align: center;
 
