@@ -126,7 +126,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  outline: 0.4rem solid white;
+  box-shadow: 0 0 0 0.35rem white;
 }
 
 .user-card__stats {
