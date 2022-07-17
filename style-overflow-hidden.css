@@ -6,6 +6,8 @@
   --clr-light: hsl(227, 10%, 46%);
   --clr-lightest: hsl(0, 0%, 59%);
   --clr-darkest: hsl(0, 0%, 0%);
+
+  overflow: hidden;
 }
 
 *,
@@ -52,6 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  overflow: hidden;
 }
 
 .bg-pattern-top,
