@@ -6,6 +6,8 @@
   --clr-light: hsl(227, 10%, 46%);
   --clr-lightest: hsl(0, 0%, 59%);
   --clr-darkest: hsl(0, 0%, 0%);
+
+  overflow: hidden;
 }
 
 *,
@@ -42,15 +44,13 @@
 /*  */
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   background-color: var(--bg-body);
 
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125rem;
 
-  display: flex;
-  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
@@ -73,6 +73,13 @@ body {
   bottom: 0;
   right: 0;
   transform: translate(50%, 50%);
+}
+
+.container {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
