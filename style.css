@@ -1,5 +1,7 @@
 :root {
   box-sizing: border-box;
+
+  /* Background and font colors */
   --bg-body: hsl(185, 75%, 39%);
   --bg-card: hsl(0, 0%, 100%);
   --clr-accent: hsl(229, 23%, 23%);
@@ -7,6 +9,7 @@
   --clr-lightest: hsl(0, 0%, 59%);
   --clr-darkest: hsl(0, 0%, 0%);
 
+  /* Prevents side-scrolling caused by body background patterns */
   overflow: hidden;
 }
 
@@ -52,6 +55,8 @@ body {
   font-size: 1.125rem;
 
   position: relative;
+
+  /* Prevents side-scrolling caused by body background patterns */
   overflow: hidden;
 }
 
@@ -76,14 +81,17 @@ body {
 }
 
 .container {
-  height: 100vh;
-  overflow: auto;
   display: flex;
   flex-direction: column;
+
+  /* Allows scrolling if more content is added */
+  height: 100vh;
+  overflow: auto;
 }
 
 main {
   flex-grow: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,10 +104,11 @@ main {
 
   text-align: center;
 
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgb(0 0 0 / 0.25);
   background-color: var(--bg-card);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.25);
+
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -116,16 +125,10 @@ main {
 
 .user-card__info {
   position: relative;
+
   padding-block-start: 4.5rem;
   padding-block-end: 2rem;
   padding-inline: 3rem;
-}
-
-.user-card__name-age {
-  display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  margin-bottom: 0.5rem;
 }
 
 .user-card__img {
@@ -138,11 +141,20 @@ main {
   box-shadow: 0 0 0 0.35rem white;
 }
 
+.user-card__name-age {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+
+  margin-bottom: 0.5rem;
+}
+
 .user-card__stats {
   display: flex;
   justify-content: space-between;
 
   border-top: 1px solid hsl(0, 0%, 90%);
+
   padding-block: 1.25rem;
   padding-inline: 3rem;
 }
@@ -154,6 +166,7 @@ main {
 .attribution {
   padding-block-start: 1rem;
   padding-block-end: 0.25rem;
+
   font-size: 0.75rem;
   text-align: center;
   color: var(--clr-darkest);
