@@ -8,9 +8,6 @@
   --clr-light: hsl(227, 10%, 46%);
   --clr-lightest: hsl(0, 0%, 59%);
   --clr-darkest: hsl(0, 0%, 0%);
-
-  /* Prevents side-scrolling caused by body background patterns */
-  overflow: hidden;
 }
 
 *,
@@ -56,8 +53,20 @@ body {
 
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
   /* Prevents side-scrolling caused by body background patterns */
   overflow: hidden;
+
+  /* Places container (and images) behind other elements */
+  z-index: -1;
 }
 
 .bg-pattern-top,
@@ -65,7 +74,6 @@ body {
   display: block;
   position: absolute;
   max-width: 100%;
-  z-index: -1;
 }
 
 .bg-pattern-top {
@@ -78,15 +86,6 @@ body {
   bottom: 0;
   right: 0;
   transform: translate(50%, 50%);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-
-  /* Allows scrolling if more content is added */
-  height: 100vh;
-  overflow: auto;
 }
 
 main {
