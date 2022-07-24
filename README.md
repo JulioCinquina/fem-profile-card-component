@@ -6,8 +6,8 @@ The card contains basic user information, a photo and statistics. Two of its sec
 
 ## Links
 
-- [Solution on Frontend Mentor]()
-- [Live Site on GitHub Pages]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-with-absolute-positioning-and-crossbrowser-compatibility-9j7Lz7PF7D)
+- [Live Site on GitHub Pages](https://juliocinquina.github.io/fem-profile-card-component/)
 
 ## Screenshot
 
